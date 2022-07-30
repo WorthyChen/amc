@@ -1,0 +1,8 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+server:
+  port: 3720
+  servlet:
+    context-path: /amc
