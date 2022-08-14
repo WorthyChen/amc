@@ -1,30 +1,22 @@
-package org.chaniiuhoo.amc.common.component.entity;
+package org.chaniiuhoo.amc.component.table;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
+import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
-import java.sql.Date;
 import java.sql.Timestamp;
-
 
 /**
  * @author Worthy
  * @version 1.0.0
  * @class AccessControlList
  * @description <TODO description class purpose>
- * @create 2022/8/71:44
+ * @create 2022/8/14 19:32
  */
-
-
 @Data
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
-public class AccessControlList {
+public class AccessControlList{
 
-    private int i;
+    @TableId
+    private int id;
 
     private String object;
 

@@ -4,11 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e965a0c4-b382-4408-950a-c3c019082499" name="Changes" comment="readme">
+    <list default="true" id="e965a0c4-b382-4408-950a-c3c019082499" name="Changes" comment="接入mysql、mybatis、spring-test">
+      <change afterPath="$PROJECT_DIR$/amc-component/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amc-dao/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amc-dao/src/main/java/org/chaniiuhoo/amc/dao/mapper/StudentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amc-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/amc-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/amc-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amc-api/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/amc-api/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amc-common/src/main/java/org/chaniiuhoo/amc/common/mappers/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/amc-common/src/main/java/org/chaniiuhoo/amc/common/mapper/StudentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amc-api/src/main/java/org/chaniiuhoo/amc/api/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/amc-api/src/main/java/org/chaniiuhoo/amc/api/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amc-api/src/main/java/org/chaniiuhoo/amc/api/config/datasource/AMCDataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/amc-api/src/main/java/org/chaniiuhoo/amc/api/config/datasource/AMCDataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amc-api/src/main/java/org/chaniiuhoo/amc/api/controller/HealthCheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/amc-api/src/main/java/org/chaniiuhoo/amc/api/controller/HealthCheckController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amc-api/src/test/java/org/chaniiuhoo/amc/api/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/amc-api/src/test/java/org/chaniiuhoo/amc/api/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amc-common/src/main/java/org/chaniiuhoo/amc/common/component/entity/AccessControlList.java" beforeDir="false" afterPath="$PROJECT_DIR$/amc-component/src/main/java/org/chaniiuhoo/amc/component/entity/AccessControlListEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amc-common/src/main/java/org/chaniiuhoo/amc/common/mapper/StudentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amc-common/src/main/java/org/chaniiuhoo/amc/common/mapper/amc/AccessControlListMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/amc-dao/src/main/java/org/chaniiuhoo/amc/dao/mapper/amc/AccessControlListMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amc-common/src/main/java/org/chaniiuhoo/amc/common/mapper/amc/DemoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/amc-dao/src/main/java/org/chaniiuhoo/amc/dao/mapper/amc/DemoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amc-common/src/main/java/org/chaniiuhoo/amc/common/utils/DemoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/amc-common/src/main/java/org/chaniiuhoo/amc/common/utils/DemoUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +52,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2Cf43mXPriyTCQkPZwzcr79UJfT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -61,11 +81,11 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editing.templates",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
     "spring.configuration.checksum": "40f9b11fb9996cf89aad6f4ca3cec466"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.Test.testMybatis">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="amc-api-Application" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="15" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -91,6 +111,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test.testMybatisPlus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="amc-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.chaniiuhoo.amc.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.chaniiuhoo.amc.api" />
+      <option name="MAIN_CLASS_NAME" value="org.chaniiuhoo.amc.api.Test" />
+      <option name="METHOD_NAME" value="testMybatisPlus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" value="local" />
       <module name="amc-api" />
@@ -101,11 +137,13 @@
     </configuration>
     <list>
       <item itemvalue="Application.amc-api-Application" />
+      <item itemvalue="JUnit.Test.testMybatisPlus" />
       <item itemvalue="JUnit.Test.testMybatis" />
       <item itemvalue="Spring Boot.Application" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Test.testMybatisPlus" />
         <item itemvalue="JUnit.Test.testMybatis" />
       </list>
     </recent_temporary>
@@ -120,7 +158,9 @@
       <updated>1659180111436</updated>
       <workItem from="1659180113729" duration="8844000" />
       <workItem from="1659240579364" duration="1303000" />
-      <workItem from="1659791717058" duration="13685000" />
+      <workItem from="1659791717058" duration="13836000" />
+      <workItem from="1660398237241" duration="109000" />
+      <workItem from="1660474511228" duration="9043000" />
     </task>
     <task id="LOCAL-00001" summary="swagger multi-modules">
       <created>1659191935600</created>
@@ -136,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659192779200</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="接入mysql、mybatis、spring-test">
+      <created>1659812558527</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659812558527</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +218,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="swagger multi-modules" />
     <MESSAGE value="readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme" />
+    <MESSAGE value="接入mysql、mybatis、spring-test" />
+    <option name="LAST_COMMIT_MESSAGE" value="接入mysql、mybatis、spring-test" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

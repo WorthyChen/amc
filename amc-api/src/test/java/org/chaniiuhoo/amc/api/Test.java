@@ -1,16 +1,12 @@
 package org.chaniiuhoo.amc.api;
 
 import lombok.extern.slf4j.Slf4j;
-import org.chaniiuhoo.amc.common.mapper.amc.AccessControlListMapper;
+import org.chaniiuhoo.amc.dao.mapper.amc.AccessControlListMapper;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Profile;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.util.StringUtils;
-
-import java.sql.Timestamp;
-import java.util.stream.Collectors;
 
 /**
  * @author Worthy
@@ -35,5 +31,10 @@ public class Test {
         //System.out.println(accessControlListMapper.selectAll().stream().map(accessControlList -> accessControlList.getCreatTime()).collect(Collectors.toList()));
         System.out.println(accessControlListMapper.selectAll());
 
+    }
+    @org.junit.Test
+    public void testMybatisPlus() {
+        log.error("dsds");
+        System.out.println(accessControlListMapper.selectById(1));
     }
 }

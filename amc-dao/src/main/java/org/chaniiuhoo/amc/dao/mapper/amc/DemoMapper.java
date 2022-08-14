@@ -1,4 +1,4 @@
-package org.chaniiuhoo.amc.common.mapper.amc;
+package org.chaniiuhoo.amc.dao.mapper.amc;
 
 import org.apache.ibatis.annotations.Mapper;
 
